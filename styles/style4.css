@@ -1,0 +1,148 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: hsl(0 0% 96%);
+  color: hsl(210 10% 20%);
+}
+
+header {
+  background: hsl(210 29% 12%);
+  color: hsl(0 0% 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 48px;
+}
+header .logo span { 
+  color: hsl(200 100% 50%); 
+}
+
+nav ul { 
+  list-style: none; 
+  display: flex; 
+  gap: 24px; 
+}
+
+nav a {
+  color: hsl(0 0% 100%);
+  text-decoration: none;
+}
+
+nav ul li a.activo,
+nav ul li a:hover { 
+  color: hsla(231, 78%, 44%, 0.856); 
+}
+
+.boletin {
+  background: hsl(0 0% 20%);
+  color: hsl(0 0% 100%);
+  padding: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.boletin h2 { 
+  font-size: 1.25rem; 
+}
+
+.boletin form { 
+  display: flex; 
+  gap: 8px; 
+}
+
+.boletin input {
+  padding: 8px 10px;
+  width: 260px;
+  border: 1px solid hsl(0 0% 75%);
+  border-radius: 4px;
+}
+
+.boletin button {
+  padding: 8px 14px;
+  background: hsl(15 90% 50%);
+  color: hsl(0 0% 100%);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contenedor {
+  display: flex;
+  gap: 24px;
+  padding: 24px 48px;
+  align-items: flex-start;
+}
+
+.principal { 
+  flex: 3; min-width: 0; 
+}
+
+.col-der {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 280px;
+}
+
+.box-info {
+  background: hsl(210 29% 20%);
+  color: hsl(0 0% 100%);
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.mapa {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border: 1px solid hsl(0 0% 80%);
+  border-radius: 4px;
+  display: block;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+.formulario label { 
+  font-weight: 600; 
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  border: 1px solid hsl(0 0% 80%);
+  border-radius: 4px;
+  background: hsl(0 0% 100%);
+}
+
+.formulario textarea { 
+  min-height: 140px; 
+  resize: vertical; 
+}
+
+.btn-enviar {
+  margin-top: 8px;
+  padding: 12px;
+  background: hsl(15 80% 50%);
+  color: hsl(0 0% 100%);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 24px;
+  background: hsl(200 100% 50%);
+  color: hsl(0 0% 100%);
+  text-align: center;
+  padding: 16px;
+}

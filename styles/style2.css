@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: hsl(0, 0%, 96%);
+}
+
+header {
+  background: #222;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+header .logo span {
+  color: hsl(200, 100%, 50%);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+nav ul li a.activo,
+nav ul li a:hover {
+  color: hsla(231, 80%, 48%, 0.753);
+}
+
+.boletin {
+  background: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 20px;
+}
+
+.boletin form {
+  margin-top: 10px;
+}
+
+.boletin input {
+  padding: 8px;
+  width: 250px;
+}
+
+.boletin button {
+  padding: 8px 15px;
+  background: hsl(12, 100%, 50%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  gap: 20px;
+}
+
+.principal {
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+  background: hsl(210, 29%, 24%);
+  color: hsl(0, 0%, 100%);
+  padding: 15px;
+  height: 200px;
+}
+
+.caja-oscura {
+  background: hsl(210, 29%, 24%);
+  color: hsl(0, 0%, 100%);
+  padding: 15px;
+  margin: 15px 0;
+}
+
+footer {
+  background: hsl(200, 100%, 50%);
+  text-align: center;
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+  margin-top: 20px;
+}
